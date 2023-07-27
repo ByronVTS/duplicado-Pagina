@@ -1,0 +1,139 @@
+:root{
+    --gris:#e1e1e1;
+}
+html{
+    font-size: 65.5%;
+}
+*{
+    padding: 0; 
+    margin: 0;
+    border: 0; 
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+    height: 100%;
+    margin: 0;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+/*----------GLOBALES----------  */
+.contenedor{
+    width: min(80%, 150rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+    background-size: cover;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+/* ------HEADER------ */
+
+.banner{
+    height: 15rem;
+    background: url(../img/banner2.png) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+.tools{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .content{
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr;
+        margin-left: 1rem;
+    }
+}
+.account .fix-nav .filter{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+
+}
+.account{
+    padding-bottom: 3rem;
+}
+.account__input{
+    width: 100%;
+}
+.account__button{
+    margin-top: 8px;
+    background-color: red;
+}
+.account__link{
+    display: block;
+}
+.fix-nav{
+    padding-bottom: 3rem;
+}
+.fix-nav__link{
+    display: block;
+}
+.filter{
+    padding-bottom: 3rem;
+}
+.filter__group{
+    display: block;
+}
+.filter__label{
+    display: block;
+}
+
+/*-------SECCION DE CARTAS DE PERSONAS */
+@media (min-width: 768px) {
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border: 1px solid red;
+    }
+}
+.card{
+    margin-bottom: 1rem;
+}
+.card__img{
+    background-color: rgb(215, 227, 231);
+    padding: 1rem;
+}
+.card__info{
+    padding: 1rem;
+}
+/* ------GALERIA------- */
+
+@media (min-width: 768px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.galeria__img{
+    padding: 0.5rem;
+}
